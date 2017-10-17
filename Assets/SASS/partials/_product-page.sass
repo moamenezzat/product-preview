@@ -1,0 +1,320 @@
+
+.product-page
+  position: relative
+  padding: 10vw 0
+
+.product-details
+  &__preview-container
+    width: 39.2em
+  &__share
+    margin-top: 1.5em
+    margin-bottom: 1.5em
+  &__share-button
+    display: inline-block
+    width: auto
+    overflow: hidden
+    vertical-align: top
+    opacity: 0.85
+    text-align: center
+    padding: .3em 1em
+    margin: 0 .1em
+    border-radius: 1px
+    font-size: 1rem
+    &:hover
+      opacity: 1
+    img
+      display: inline-block
+      border: none
+      opacity: 1.00
+      width: 1em
+      height: auto
+      // max-width: 75%
+      // max-height: 60%
+      vertical-align: middle
+    &.fb
+      background-color: #637EC3
+      border: 1px solid #637EC3
+    &.tw
+      background-color: #65D5FF
+      border: 1px solid #65D5FF
+    &.gp
+      background-color: #E75B5E
+      border: 1px solid #E75B5E
+    &.su
+      background-color: #9FCD60
+      border: 1px solid #9FCD60
+    &.pin
+      background-color: #F1C057
+      border: 1px solid #F1C057
+  &__actions
+    width: 19.3em
+    position: relative
+    z-index: 1000
+    padding-left: 3.5em
+    box-sizing: content-box
+  &__top-actions
+    padding-bottom: 1em
+  &__previous-product, &__next-product
+    font-size: 1.05rem
+    font-weight: bold
+    text-transform: uppercase
+  &__previous-product::before,
+    content: ""
+    background: url("/Assets/Images/Icons/page-arrow.png") center no-repeat
+    width: .7em
+    height: .7em
+    background-size: contain
+    display: inline-block
+    margin-right: .4em
+  &__next-product::after
+    content: ""
+    background: url("/Assets/Images/Icons/page-arrow.png") center no-repeat
+    width: .7em
+    height: .7em
+    background-size: contain
+    display: inline-block
+    margin-left: .4em
+    transform: rotate(180deg)
+  &__stat
+    width: 2.5em
+    font-size: 1rem
+    margin: 0 .1em
+    border: 1px solid $borderColor
+    &.comments &__icon
+      background-image: url("/Assets/Images/Icons/comment.png")
+    &.likes &__icon
+      background-image: url("/Assets/Images/Icons/like.png")
+    &.fav &__icon
+      background-image: url("/Assets/Images/Icons/fav.png")
+
+    &__icon
+      width: 100%
+      height: 1.6em
+      background-color: #ccc
+      display: block
+      background-size: 40%
+      background-repeat: no-repeat
+      background-position: center
+    &__text
+      text-align: center
+      padding: .5em 0
+      display: block
+      font-size: .75rem
+  &__title-block, &__customize
+    padding: 1em 0
+    border-top: 1px solid $borderColor
+  &__title
+    font-family: $butonsFonts
+  &__artist
+    margin-top: .6em
+    &-icon
+      font-size: 1rem
+      margin-right: .5em
+      img
+        width: 2.1em
+        height: auto
+    &-name
+      font-size: .95rem
+      a
+        font-weight: bold
+  &__price
+    font-family: $fourthFont
+    font-size: 2.3rem
+    color: $headerColor
+  &__add-to-cart
+    text-transform: uppercase
+    background: $highLightColor
+    color: white
+    font-family: $fourthFont
+    font-size: 1.2rem
+    padding: .5em 1em
+    border-radius: 2px
+    &:hover
+      background: #CACCCB
+  &__drop-option
+    margin: 2em 0
+    label
+      width: 100%
+      display: block
+      font-family: $headerFont
+      font-size: .85rem
+      font-weight: 300
+      text-transform: uppercase
+      color: #000
+    select
+      min-width: 5em
+      margin-top: .5em
+      display: block
+      width: 100%
+      padding: .4em
+      margin-top: .4em
+      border: 1px solid #CCCCCC
+      border-radius: 0px
+      font-size: 1.25rem
+      font-family: $fourthFont
+      color: #666666
+      letter-spacing: 1px
+      word-spacing: 2px
+      background-color: white
+  &__image-size-slider
+    position: relative
+    width: 100%
+    z-index: 1010
+    .handle
+      height: 35px
+      cursor: pointer
+      width: 12px
+      border: 1px solid $borderColor
+      position: relative
+      background: #fff
+      left: 50%
+      transform: translateX(-50%)
+    .track
+      width: 100%
+      height: 2px
+      background: #999
+      position: absolute
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+  &__bg-color
+    margin-top: 1em
+    &.hidden
+      display: none
+    &.toggle-color
+      .small-color-picker-container
+        display: none
+      .big-color-picker-container
+        display: flex
+      .show-basic-text
+        display: inline
+      .show-more-text
+        display: none
+    .current-selected
+      width: 100%
+      border: 1px solid $borderColor
+      padding: .5em 1em
+      margin-top: .5em
+      cursor: pointer
+      .color
+        width: 2em
+        height: 2em
+        border: 1px solid $borderColor
+        background-color: #570d85
+        margin-right: .5em
+        &-text
+          font-size: 1.2rem
+      img
+        margin-left: auto
+  &__label
+    width: 100%
+    display: block
+    font-family: $headerFont
+    font-size: .85rem
+    font-weight: 300
+    text-transform: uppercase
+    color: #000
+  &__desc
+    font-size: .85rem
+    margin-top: .5em
+    &-container
+      margin-top: 3em
+  &__ship
+    margin-top: 2em
+
+.small-color-picker
+  margin: 1em auto 0
+  display: table
+.colorSquare
+  width: 1.4em
+  height: 1.4em
+  display: inline-block
+  margin: .1em
+  position: relative
+  &.selected
+    border: 1px solid #000000
+    &:after
+      content: "\002714"
+      display: inline-block
+      font-size: .9rem
+      color: inherit
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+
+.default-color
+  margin-top: 1em
+  .colorSquare
+    margin-right: .5em
+
+.big-color-picker-container
+  display: none
+  margin-top: 1em
+  form
+    margin-top: .5em
+    input
+      text-align: center
+
+.more-color
+  font-size: 1rem
+  text-align: center
+  margin: 1em auto
+  display: table
+  text-decoration: underline
+  .show-basic-text
+    display: none
+
+
+.product-details
+  &__preview
+    position: relative
+    width: 100%
+    img
+      display: block
+      width: 100%
+      height: auto
+
+  &__change-preview
+    background: #848659
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    width: 100%
+    z-index: 1000
+    opacity: 0
+    cursor: move
+    &.mobile
+      border-radius: 50px
+      .outer-border, .inner-border
+        border-radius: 50px
+    .original-image
+      position: absolute
+      left: 0%
+      top: 0%
+      //min-height: 100%
+      //min-width: 100%
+      width: 100%
+      height: auto
+      display: block
+      height: auto
+      border: 1px dashed $borderColor
+      z-index: 1000
+    .outer-border
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      border: 1px dashed  #00FF00
+      z-index: 1000
+    .inner-border
+      position: absolute
+      top: 1em
+      left: 1em
+      right: 1em
+      bottom: 1em
+      border: 1px solid  #00FF00
+      z-index: 1000
