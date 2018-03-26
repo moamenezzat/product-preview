@@ -17,3 +17,5 @@ There are 3 demo examples:
  1. [pillow](https://moamenezzat.github.io/product-preview/)  
  2. [Mobile Case Horizontal](https://moamenezzat.github.io/product-preview/mobile-hor.html)
  3. [Mobile Case Vertical](https://moamenezzat.github.io/product-preview/mobile-vert.html)
+
+The code can be used to have more than one instance per page each instance just needs to have the same HTML structure.
