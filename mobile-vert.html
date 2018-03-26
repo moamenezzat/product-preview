@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/Assets/CSS/app.css">
+  <title></title>
+</head>
+
+<body>
+
+  <div class="product-page">
+    <section class="container product-details flex-container justify-center">
+      <div class="product-details__preview-container flex-container flex-column">
+        <div class="product-details__preview" data-width="286" data-height="525">
+          <img src="/Assets/Images/case-vert.jpg" alt="">
+          <div class="product-details__change-preview" id="product-details__change-preview">
+            <div class="outer-border"></div>
+            <div class="inner-border"></div>
+            <img src="/Assets/Images/orignal.jpg" alt="" class="original-image height" id="original-image">
+          </div>
+        </div>
+        <div class="product-details__share flex-container justify-center">
+          <button class="product-details__share-button fb"><img src="/Assets/Images/Icons/fb-btn.png" alt=""></button>
+          <button class="product-details__share-button tw"><img src="/Assets/Images/Icons/tw-btn.png" alt=""></button>
+          <button class="product-details__share-button gp"><img src="/Assets/Images/Icons/gp-btn.png" alt=""></button>
+          <button class="product-details__share-button su"><img src="/Assets/Images/Icons/su-btn.png" alt=""></button>
+          <button class="product-details__share-button pin"><img src="/Assets/Images/Icons/pin-btn.png" alt=""></button>
+        </div>
+
+      </div>
+      <div class="product-details__actions">
+        <div class="product-details__customize">
+          <div class="product-details__image-size-slider">
+            <div class="track" id="track"></div>
+            <div class="handle" id="handle"></div>
+          </div>
+          <div class="product-details__bg-color hidden">
+            <p class="product-details__label">background color</p>
+            <div class="current-selected flex-container align-center">
+              <div class="color"></div>
+              <p class="color-text">Navy</p>
+              <img src="/Assets/Images/Icons/down.png" alt="">
+            </div>
+            <div class="small-color-picker-container">
+              <div class="small-color-picker">
+                <div class="colorSquare" data-value="ff6666" data-name="Red 1" data-style="border: 1px solid #a05858; color: #FFFFFF; background-color: #ff6666;" title="Red 1" style="border: 1px solid #a05858; color: #FFFFFF; background-color: #ff6666;">
+                </div>
+
+                <div class="colorSquare" data-value="ffa366" data-name="Red Orange 1" data-style="border: 1px solid #a07458; color: #FFFFFF; background-color: #ffa366;" title="Red Orange 1" style="border: 1px solid #a07458; color: #FFFFFF; background-color: #ffa366;">
+                </div>
+
+                <div class="colorSquare" data-value="ffc266" data-name="Orange 1" data-style="border: 1px solid #a08358; color: #FFFFFF; background-color: #ffc266;" title="Orange 1" style="border: 1px solid #a08358; color: #FFFFFF; background-color: #ffc266;">
+                </div>
+
+                <div class="colorSquare" data-value="ffe066" data-name="Orange Yellow 1" data-style="border: 1px solid #a09158; color: #FFFFFF; background-color: #ffe066;" title="Orange Yellow 1" style="border: 1px solid #a09158; color: #FFFFFF; background-color: #ffe066;">
+                </div>
+
+                <div class="colorSquare" data-value="ffff66" data-name="Yellow 1" data-style="border: 1px solid #a0a058; color: #FFFFFF; background-color: #ffff66;" title="Yellow 1" style="border: 1px solid #a0a058; color: #FFFFFF; background-color: #ffff66;">
+                </div>
+
+                <div class="colorSquare" data-value="ccf060" data-name="Yellow Green 1" data-style="border: 1px solid #889855; color: #FFFFFF; background-color: #ccf060;" title="Yellow Green 1" style="border: 1px solid #889855; color: #FFFFFF; background-color: #ccf060;">
+                </div>
+
+                <div class="colorSquare" data-value="5ae05a" data-name="Green 1" data-style="border: 1px solid #529152; color: #FFFFFF; background-color: #5ae05a;" title="Green 1" style="border: 1px solid #529152; color: #FFFFFF; background-color: #5ae05a;">
+                </div>
+
+                <div class="colorSquare" data-value="5abfe0" data-name="Aqua 1" data-style="border: 1px solid #528191; color: #FFFFFF; background-color: #5abfe0;" title="Aqua 1" style="border: 1px solid #528191; color: #FFFFFF; background-color: #5abfe0;">
+                </div>
+
+                <div class="colorSquare" data-value="5a92e0" data-name="Blue 1" data-style="border: 1px solid #526c91; color: #FFFFFF; background-color: #5a92e0;" title="Blue 1" style="border: 1px solid #526c91; color: #FFFFFF; background-color: #5a92e0;">
+                </div>
+
+                <div class="colorSquare" data-value="705ae0" data-name="Navy 1" data-style="border: 1px solid #5c5291; color: #FFFFFF; background-color: #705ae0;" title="Navy 1" style="border: 1px solid #5c5291; color: #FFFFFF; background-color: #705ae0;">
+                </div>
+
+                <div class="colorSquare" data-value="b45ae0" data-name="Purple 1" data-style="border: 1px solid #7c5291; color: #FFFFFF; background-color: #b45ae0;" title="Purple 1" style="border: 1px solid #7c5291; color: #FFFFFF; background-color: #b45ae0;">
+                </div>
+
+                <div class="colorSquare" data-value="e85dae" data-name="Pink 1" data-style="border: 1px solid #955379; color: #FFFFFF; background-color: #e85dae;" title="Pink 1" style="border: 1px solid #955379; color: #FFFFFF; background-color: #e85dae;">
+                </div>
+
+                <div class="colorSquare" data-value="ff3333" data-name="Red 2" data-style="border: 1px solid #a04040; color: #FFFFFF; background-color: #ff3333;" title="Red 2" style="border: 1px solid #a04040; color: #FFFFFF; background-color: #ff3333;">
+                </div>
+
+                <div class="colorSquare" data-value="ff8533" data-name="Red Orange 2" data-style="border: 1px solid #a06640; color: #FFFFFF; background-color: #ff8533;" title="Red Orange 2" style="border: 1px solid #a06640; color: #FFFFFF; background-color: #ff8533;">
+                </div>
+
+                <div class="colorSquare" data-value="ffad33" data-name="Orange 2" data-style="border: 1px solid #a07940; color: #FFFFFF; background-color: #ffad33;" title="Orange 2" style="border: 1px solid #a07940; color: #FFFFFF; background-color: #ffad33;">
+                </div>
+
+                <div class="colorSquare" data-value="ffd633" data-name="Orange Yellow 2" data-style="border: 1px solid #a08c40; color: #FFFFFF; background-color: #ffd633;" title="Orange Yellow 2" style="border: 1px solid #a08c40; color: #FFFFFF; background-color: #ffd633;">
+                </div>
+
+                <div class="colorSquare" data-value="ffff33" data-name="Yellow 2" data-style="border: 1px solid #a0a040; color: #FFFFFF; background-color: #ffff33;" title="Yellow 2" style="border: 1px solid #a0a040; color: #FFFFFF; background-color: #ffff33;">
+                </div>
+
+                <div class="colorSquare" data-value="bceb2f" data-name="Yellow Green 2" data-style="border: 1px solid #80963e; color: #FFFFFF; background-color: #bceb2f;" title="Yellow Green 2" style="border: 1px solid #80963e; color: #FFFFFF; background-color: #bceb2f;">
+                </div>
+
+                <div class="colorSquare" data-value="2bd62b" data-name="Green 2" data-style="border: 1px solid #3c8c3c; color: #FFFFFF; background-color: #2bd62b;" title="Green 2" style="border: 1px solid #3c8c3c; color: #FFFFFF; background-color: #2bd62b;">
+                </div>
+
+                <div class="colorSquare" data-value="2babd6" data-name="Aqua 2" data-style="border: 1px solid #3c788c; color: #FFFFFF; background-color: #2babd6;" title="Aqua 2" style="border: 1px solid #3c788c; color: #FFFFFF; background-color: #2babd6;">
+                </div>
+
+                <div class="colorSquare" data-value="2b72d6" data-name="Blue 2" data-style="border: 1px solid #3c5d8c; color: #FFFFFF; background-color: #2b72d6;" title="Blue 2" style="border: 1px solid #3c5d8c; color: #FFFFFF; background-color: #2b72d6;">
+                </div>
+
+                <div class="colorSquare" data-value="472bd6" data-name="Navy 2" data-style="border: 1px solid #493c8c; color: #FFFFFF; background-color: #472bd6;" title="Navy 2" style="border: 1px solid #493c8c; color: #FFFFFF; background-color: #472bd6;">
+                </div>
+
+                <div class="colorSquare" data-value="9d2bd6" data-name="Purple 2" data-style="border: 1px solid #713c8c; color: #FFFFFF; background-color: #9d2bd6;" title="Purple 2" style="border: 1px solid #713c8c; color: #FFFFFF; background-color: #9d2bd6;">
+                </div>
+
+                <div class="colorSquare" data-value="e02d96" data-name="Pink 2" data-style="border: 1px solid #913d6e; color: #FFFFFF; background-color: #e02d96;" title="Pink 2" style="border: 1px solid #913d6e; color: #FFFFFF; background-color: #e02d96;">
+                </div>
+
+                <div class="colorSquare" data-value="ff0000" data-name="Red 3" data-style="border: 1px solid #a02828; color: #FFFFFF; background-color: #ff0000;" title="Red 3" style="border: 1px solid #a02828; color: #FFFFFF; background-color: #ff0000;">
+                </div>
+
+                <div class="colorSquare" data-value="ff6600" data-name="Red Orange 3" data-style="border: 1px solid #a05828; color: #FFFFFF; background-color: #ff6600;" title="Red Orange 3" style="border: 1px solid #a05828; color: #FFFFFF; background-color: #ff6600;">
+                </div>
+
+                <div class="colorSquare" data-value="ff9900" data-name="Orange 3" data-style="border: 1px solid #a07028; color: #FFFFFF; background-color: #ff9900;" title="Orange 3" style="border: 1px solid #a07028; color: #FFFFFF; background-color: #ff9900;">
+                </div>
+
+                <div class="colorSquare" data-value="ffcc00" data-name="Orange Yellow 3" data-style="border: 1px solid #a08828; color: #FFFFFF; background-color: #ffcc00;" title="Orange Yellow 3" style="border: 1px solid #a08828; color: #FFFFFF; background-color: #ffcc00;">
+                </div>
+
+                <div class="colorSquare" data-value="ffff00" data-name="Yellow 3" data-style="border: 1px solid #a0a028; color: #FFFFFF; background-color: #ffff00;" title="Yellow 3" style="border: 1px solid #a0a028; color: #FFFFFF; background-color: #ffff00;">
+                </div>
+
+                <div class="colorSquare" data-value="ace500" data-name="Yellow Green 3" data-style="border: 1px solid #789328; color: #FFFFFF; background-color: #ace500;" title="Yellow Green 3" style="border: 1px solid #789328; color: #FFFFFF; background-color: #ace500;">
+                </div>
+
+                <div class="colorSquare" data-value="00cc00" data-name="Green 3" data-style="border: 1px solid #288828; color: #FFFFFF; background-color: #00cc00;" title="Green 3" style="border: 1px solid #288828; color: #FFFFFF; background-color: #00cc00;">
+                </div>
+
+                <div class="colorSquare" data-value="0099cc" data-name="Aqua 3" data-style="border: 1px solid #287088; color: #FFFFFF; background-color: #0099cc;" title="Aqua 3" style="border: 1px solid #287088; color: #FFFFFF; background-color: #0099cc;">
+                </div>
+
+                <div class="colorSquare" data-value="0055cc" data-name="Blue 3" data-style="border: 1px solid #285088; color: #FFFFFF; background-color: #0055cc;" title="Blue 3" style="border: 1px solid #285088; color: #FFFFFF; background-color: #0055cc;">
+                </div>
+
+                <div class="colorSquare" data-value="2200cc" data-name="Navy 3" data-style="border: 1px solid #382888; color: #FFFFFF; background-color: #2200cc;" title="Navy 3" style="border: 1px solid #382888; color: #FFFFFF; background-color: #2200cc;">
+                </div>
+
+                <div class="colorSquare" data-value="8800cc" data-name="Purple 3" data-style="border: 1px solid #682888; color: #FFFFFF; background-color: #8800cc;" title="Purple 3" style="border: 1px solid #682888; color: #FFFFFF; background-color: #8800cc;">
+                </div>
+
+                <div class="colorSquare" data-value="d9007e" data-name="Pink 3" data-style="border: 1px solid #8e2863; color: #FFFFFF; background-color: #d9007e;" title="Pink 3" style="border: 1px solid #8e2863; color: #FFFFFF; background-color: #d9007e;">
+                </div>
+
+                <div class="colorSquare" data-value="cc0000" data-name="Red 4" data-style="border: 1px solid #882828; color: #FFFFFF; background-color: #cc0000;" title="Red 4" style="border: 1px solid #882828; color: #FFFFFF; background-color: #cc0000;">
+                </div>
+
+                <div class="colorSquare" data-value="cc5200" data-name="Red Orange 4" data-style="border: 1px solid #884e28; color: #FFFFFF; background-color: #cc5200;" title="Red Orange 4" style="border: 1px solid #884e28; color: #FFFFFF; background-color: #cc5200;">
+                </div>
+
+                <div class="colorSquare" data-value="cc7a00" data-name="Orange 4" data-style="border: 1px solid #886128; color: #FFFFFF; background-color: #cc7a00;" title="Orange 4" style="border: 1px solid #886128; color: #FFFFFF; background-color: #cc7a00;">
+                </div>
+
+                <div class="colorSquare" data-value="cca300" data-name="Orange Yellow 4" data-style="border: 1px solid #887428; color: #FFFFFF; background-color: #cca300;" title="Orange Yellow 4" style="border: 1px solid #887428; color: #FFFFFF; background-color: #cca300;">
+                </div>
+
+                <div class="colorSquare" data-value="cccc00" data-name="Yellow 4" data-style="border: 1px solid #888828; color: #FFFFFF; background-color: #cccc00;" title="Yellow 4" style="border: 1px solid #888828; color: #FFFFFF; background-color: #cccc00;">
+                </div>
+
+                <div class="colorSquare" data-value="8ab800" data-name="Yellow Green 4" data-style="border: 1px solid #687e28; color: #FFFFFF; background-color: #8ab800;" title="Yellow Green 4" style="border: 1px solid #687e28; color: #FFFFFF; background-color: #8ab800;">
+                </div>
+
+                <div class="colorSquare" data-value="00a300" data-name="Green 4" data-style="border: 1px solid #287428; color: #FFFFFF; background-color: #00a300;" title="Green 4" style="border: 1px solid #287428; color: #FFFFFF; background-color: #00a300;">
+                </div>
+
+                <div class="colorSquare" data-value="007aa3" data-name="Aqua 4" data-style="border: 1px solid #286174; color: #FFFFFF; background-color: #007aa3;" title="Aqua 4" style="border: 1px solid #286174; color: #FFFFFF; background-color: #007aa3;">
+                </div>
+
+                <div class="colorSquare" data-value="0044a3" data-name="Blue 4" data-style="border: 1px solid #284874; color: #FFFFFF; background-color: #0044a3;" title="Blue 4" style="border: 1px solid #284874; color: #FFFFFF; background-color: #0044a3;">
+                </div>
+
+                <div class="colorSquare" data-value="1b00a3" data-name="Navy 4" data-style="border: 1px solid #342874; color: #FFFFFF; background-color: #1b00a3;" title="Navy 4" style="border: 1px solid #342874; color: #FFFFFF; background-color: #1b00a3;">
+                </div>
+
+                <div class="colorSquare" data-value="6d00a3" data-name="Purple 4" data-style="border: 1px solid #5b2874; color: #FFFFFF; background-color: #6d00a3;" title="Purple 4" style="border: 1px solid #5b2874; color: #FFFFFF; background-color: #6d00a3;">
+                </div>
+
+                <div class="colorSquare" data-value="ad0065" data-name="Pink 4" data-style="border: 1px solid #792857; color: #FFFFFF; background-color: #ad0065;" title="Pink 4" style="border: 1px solid #792857; color: #FFFFFF; background-color: #ad0065;">
+                </div>
+
+                <div class="colorSquare" data-value="990000" data-name="Red 5" data-style="border: 1px solid #702828; color: #FFFFFF; background-color: #990000;" title="Red 5" style="border: 1px solid #702828; color: #FFFFFF; background-color: #990000;">
+                </div>
+
+                <div class="colorSquare" data-value="993d00" data-name="Red Orange 5" data-style="border: 1px solid #704428; color: #FFFFFF; background-color: #993d00;" title="Red Orange 5" style="border: 1px solid #704428; color: #FFFFFF; background-color: #993d00;">
+                </div>
+
+                <div class="colorSquare" data-value="995c00" data-name="Orange 5" data-style="border: 1px solid #705328; color: #FFFFFF; background-color: #995c00;" title="Orange 5" style="border: 1px solid #705328; color: #FFFFFF; background-color: #995c00;">
+                </div>
+
+                <div class="colorSquare" data-value="997a00" data-name="Orange Yellow 5" data-style="border: 1px solid #706128; color: #FFFFFF; background-color: #997a00;" title="Orange Yellow 5" style="border: 1px solid #706128; color: #FFFFFF; background-color: #997a00;">
+                </div>
+
+                <div class="colorSquare" data-value="999900" data-name="Yellow 5" data-style="border: 1px solid #707028; color: #FFFFFF; background-color: #999900;" title="Yellow 5" style="border: 1px solid #707028; color: #FFFFFF; background-color: #999900;">
+                </div>
+
+                <div class="colorSquare" data-value="678a00" data-name="Yellow Green 5" data-style="border: 1px solid #586828; color: #FFFFFF; background-color: #678a00;" title="Yellow Green 5" style="border: 1px solid #586828; color: #FFFFFF; background-color: #678a00;">
+                </div>
+
+                <div class="colorSquare" data-value="007a00" data-name="Green 5" data-style="border: 1px solid #286128; color: #FFFFFF; background-color: #007a00;" title="Green 5" style="border: 1px solid #286128; color: #FFFFFF; background-color: #007a00;">
+                </div>
+
+                <div class="colorSquare" data-value="005c7a" data-name="Aqua 5" data-style="border: 1px solid #285361; color: #FFFFFF; background-color: #005c7a;" title="Aqua 5" style="border: 1px solid #285361; color: #FFFFFF; background-color: #005c7a;">
+                </div>
+
+                <div class="colorSquare" data-value="00337a" data-name="Blue 5" data-style="border: 1px solid #284061; color: #FFFFFF; background-color: #00337a;" title="Blue 5" style="border: 1px solid #284061; color: #FFFFFF; background-color: #00337a;">
+                </div>
+
+                <div class="colorSquare" data-value="14007a" data-name="Navy 5" data-style="border: 1px solid #312861; color: #FFFFFF; background-color: #14007a;" title="Navy 5" style="border: 1px solid #312861; color: #FFFFFF; background-color: #14007a;">
+                </div>
+
+                <div class="colorSquare" data-value="52007a" data-name="Purple 5" data-style="border: 1px solid #4e2861; color: #FFFFFF; background-color: #52007a;" title="Purple 5" style="border: 1px solid #4e2861; color: #FFFFFF; background-color: #52007a;">
+                </div>
+
+                <div class="colorSquare" data-value="82004c" data-name="Pink 5" data-style="border: 1px solid #65284b; color: #FFFFFF; background-color: #82004c;" title="Pink 5" style="border: 1px solid #65284b; color: #FFFFFF; background-color: #82004c;">
+                </div>
+
+                <div class="colorSquare" data-value="000000" data-name="Black" data-style="border: 1px solid #282828; color: #FFFFFF; background-color: #000000;" title="Black" style="border: 1px solid #282828; color: #FFFFFF; background-color: #000000;">
+                </div>
+
+                <div class="colorSquare" data-value="171717" data-name="Grey 10" data-style="border: 1px solid #323232; color: #FFFFFF; background-color: #171717;" title="Grey 10" style="border: 1px solid #323232; color: #FFFFFF; background-color: #171717;">
+                </div>
+
+                <div class="colorSquare" data-value="2e2e2e" data-name="Grey 9" data-style="border: 1px solid #3d3d3d; color: #FFFFFF; background-color: #2e2e2e;" title="Grey 9" style="border: 1px solid #3d3d3d; color: #FFFFFF; background-color: #2e2e2e;">
+                </div>
+
+                <div class="colorSquare" data-value="454545" data-name="Grey 8" data-style="border: 1px solid #484848; color: #FFFFFF; background-color: #454545;" title="Grey 8" style="border: 1px solid #484848; color: #FFFFFF; background-color: #454545;">
+                </div>
+
+                <div class="colorSquare" data-value="5c5c5c" data-name="Grey 7" data-style="border: 1px solid #535353; color: #FFFFFF; background-color: #5c5c5c;" title="Grey 7" style="border: 1px solid #535353; color: #FFFFFF; background-color: #5c5c5c;">
+                </div>
+
+                <div class="colorSquare" data-value="737373" data-name="Grey 6" data-style="border: 1px solid #5e5e5e; color: #FFFFFF; background-color: #737373;" title="Grey 6" style="border: 1px solid #5e5e5e; color: #FFFFFF; background-color: #737373;">
+                </div>
+
+                <div class="colorSquare" data-value="8a8a8a" data-name="Grey 5" data-style="border: 1px solid #686868; color: #FFFFFF; background-color: #8a8a8a;" title="Grey 5" style="border: 1px solid #686868; color: #FFFFFF; background-color: #8a8a8a;">
+                </div>
+
+                <div class="colorSquare" data-value="a1a1a1" data-name="Grey 4" data-style="border: 1px solid #737373; color: #FFFFFF; background-color: #a1a1a1;" title="Grey 4" style="border: 1px solid #737373; color: #FFFFFF; background-color: #a1a1a1;">
+                </div>
+
+                <div class="colorSquare" data-value="bababa" data-name="Grey 3" data-style="border: 1px solid #7f7f7f; color: #444444; background-color: #bababa;" title="Grey 3" style="border: 1px solid #7f7f7f; color: #444444; background-color: #bababa;">
+                </div>
+
+                <div class="colorSquare" data-value="d1d1d1" data-name="Grey 2" data-style="border: 1px solid #8a8a8a; color: #444444; background-color: #d1d1d1;" title="Grey 2" style="border: 1px solid #8a8a8a; color: #444444; background-color: #d1d1d1;">
+                </div>
+
+                <div class="colorSquare" data-value="e8e8e8" data-name="Grey 1" data-style="border: 1px solid #959595; color: #444444; background-color: #e8e8e8;" title="Grey 1" style="border: 1px solid #959595; color: #444444; background-color: #e8e8e8;">
+                </div>
+
+                <div class="colorSquare colorBorder" data-value="ffffff" data-name="White" data-style="border: 1px solid #a0a0a0; color: #444444; background-color: #ffffff;" title="White" style="border: 1px solid #a0a0a0; color: #444444; background-color: #ffffff;">
+                </div>
+              </div>
+              <div class="default-color flex-container align-center justify-center">
+                <div class="colorSquare selected" data-value="848659" data-name="R(132) G(134) B(89)" data-style="border: 1px solid #666751; color: #FFFFFF; background-color: #848659;" title="848659" style="border: 1px solid #666751; color: #FFFFFF; background-color: #848659;">
+                </div>
+                <p>Default: R(132) G(134) B(89)</p>
+              </div>
+            </div>
+            <div class="big-color-picker-container flex-container flex-column align-center">
+              <div class="big-color-picker" id="big-color-picker"></div>
+              <form><input type="text" id="big-color-picker-field" name="color" value="#848659" /></form>
+            </div>
+            <button class="more-color"><span class="show-more-text">Show More Colors</span> <span class="show-basic-text">show basic colors</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat:300,400|Oswald" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/utils/Draggable.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/CSSPlugin.min.js"></script>
+  <link rel="stylesheet" href="/Assets/CSS/libraries/farbtastic.css">
+  <script src="/Assets/JS/libraries/farbtastic.js" charset="utf-8"></script>
+  <script src="/Assets/JS/app.js" charset="utf-8"></script>
+</body>
+
+</html>

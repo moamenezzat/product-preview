@@ -28,8 +28,6 @@
       opacity: 1.00
       width: 1em
       height: auto
-      // max-width: 75%
-      // max-height: 60%
       vertical-align: middle
     &.fb
       background-color: #637EC3
@@ -52,110 +50,6 @@
     z-index: 1000
     padding-left: 3.5em
     box-sizing: content-box
-  &__top-actions
-    padding-bottom: 1em
-  &__previous-product, &__next-product
-    font-size: 1.05rem
-    font-weight: bold
-    text-transform: uppercase
-  &__previous-product::before,
-    content: ""
-    background: url("/Assets/Images/Icons/page-arrow.png") center no-repeat
-    width: .7em
-    height: .7em
-    background-size: contain
-    display: inline-block
-    margin-right: .4em
-  &__next-product::after
-    content: ""
-    background: url("/Assets/Images/Icons/page-arrow.png") center no-repeat
-    width: .7em
-    height: .7em
-    background-size: contain
-    display: inline-block
-    margin-left: .4em
-    transform: rotate(180deg)
-  &__stat
-    width: 2.5em
-    font-size: 1rem
-    margin: 0 .1em
-    border: 1px solid $borderColor
-    &.comments &__icon
-      background-image: url("/Assets/Images/Icons/comment.png")
-    &.likes &__icon
-      background-image: url("/Assets/Images/Icons/like.png")
-    &.fav &__icon
-      background-image: url("/Assets/Images/Icons/fav.png")
-
-    &__icon
-      width: 100%
-      height: 1.6em
-      background-color: #ccc
-      display: block
-      background-size: 40%
-      background-repeat: no-repeat
-      background-position: center
-    &__text
-      text-align: center
-      padding: .5em 0
-      display: block
-      font-size: .75rem
-  &__title-block, &__customize
-    padding: 1em 0
-    border-top: 1px solid $borderColor
-  &__title
-    font-family: $butonsFonts
-  &__artist
-    margin-top: .6em
-    &-icon
-      font-size: 1rem
-      margin-right: .5em
-      img
-        width: 2.1em
-        height: auto
-    &-name
-      font-size: .95rem
-      a
-        font-weight: bold
-  &__price
-    font-family: $fourthFont
-    font-size: 2.3rem
-    color: $headerColor
-  &__add-to-cart
-    text-transform: uppercase
-    background: $highLightColor
-    color: white
-    font-family: $fourthFont
-    font-size: 1.2rem
-    padding: .5em 1em
-    border-radius: 2px
-    &:hover
-      background: #CACCCB
-  &__drop-option
-    margin: 2em 0
-    label
-      width: 100%
-      display: block
-      font-family: $headerFont
-      font-size: .85rem
-      font-weight: 300
-      text-transform: uppercase
-      color: #000
-    select
-      min-width: 5em
-      margin-top: .5em
-      display: block
-      width: 100%
-      padding: .4em
-      margin-top: .4em
-      border: 1px solid #CCCCCC
-      border-radius: 0px
-      font-size: 1.25rem
-      font-family: $fourthFont
-      color: #666666
-      letter-spacing: 1px
-      word-spacing: 2px
-      background-color: white
   &__image-size-slider
     position: relative
     width: 100%
@@ -214,13 +108,6 @@
     font-weight: 300
     text-transform: uppercase
     color: #000
-  &__desc
-    font-size: .85rem
-    margin-top: .5em
-    &-container
-      margin-top: 3em
-  &__ship
-    margin-top: 2em
 
 .small-color-picker
   margin: 1em auto 0
@@ -269,11 +156,11 @@
 .product-details
   &__preview
     position: relative
-    width: 100%
-    img
+    margin: 0 auto
+    &>img
       display: block
       width: 100%
-      height: auto
+      height: 100%
 
   &__change-preview
     background: #848659
@@ -286,6 +173,7 @@
     z-index: 1000
     opacity: 0
     cursor: move
+    overflow: hidden
     &.mobile
       border-radius: 50px
       .outer-border, .inner-border
@@ -295,10 +183,8 @@
       left: 0%
       top: 0%
       //min-height: 100%
-      //min-width: 100%
-      width: 100%
-      height: auto
-      display: block
+      //width: 100%
+      //display: block
       height: auto
       border: 1px dashed $borderColor
       z-index: 1000

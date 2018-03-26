@@ -86,57 +86,47 @@ button {
 
 .flex-container {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
 .flex-start {
   -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
   -webkit-box-align: start;
-  -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start; }
 
 .space-between {
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
 .space-around {
-  -webkit-justify-content: space-around;
   -ms-flex-pack: distribute;
   justify-content: space-around; }
 
 .flex-column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column; }
 
 .flex-wrap {
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
 .stretch-self {
-  -webkit-align-self: stretch;
   -ms-flex-item-align: stretch;
   align-self: stretch; }
 
 .align-center {
   -webkit-box-align: center;
-  -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
 
 .justify-center {
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; }
 
@@ -259,122 +249,6 @@ strong {
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
-.product-details__top-actions {
-  padding-bottom: 1em; }
-
-.product-details__previous-product, .product-details__next-product {
-  font-size: 1.05rem;
-  font-weight: bold;
-  text-transform: uppercase; }
-
-.product-details__previous-product::before {
-  content: "";
-  background: url("/Assets/Images/Icons/page-arrow.png") center no-repeat;
-  width: .7em;
-  height: .7em;
-  background-size: contain;
-  display: inline-block;
-  margin-right: .4em; }
-
-.product-details__next-product::after {
-  content: "";
-  background: url("/Assets/Images/Icons/page-arrow.png") center no-repeat;
-  width: .7em;
-  height: .7em;
-  background-size: contain;
-  display: inline-block;
-  margin-left: .4em;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg); }
-
-.product-details__stat {
-  width: 2.5em;
-  font-size: 1rem;
-  margin: 0 .1em;
-  border: 1px solid #CCCCCC; }
-  .product-details__stat.comments .product-details__stat__icon {
-    background-image: url("/Assets/Images/Icons/comment.png"); }
-  .product-details__stat.likes .product-details__stat__icon {
-    background-image: url("/Assets/Images/Icons/like.png"); }
-  .product-details__stat.fav .product-details__stat__icon {
-    background-image: url("/Assets/Images/Icons/fav.png"); }
-  .product-details__stat__icon {
-    width: 100%;
-    height: 1.6em;
-    background-color: #ccc;
-    display: block;
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position: center; }
-  .product-details__stat__text {
-    text-align: center;
-    padding: .5em 0;
-    display: block;
-    font-size: .75rem; }
-
-.product-details__title-block, .product-details__customize {
-  padding: 1em 0;
-  border-top: 1px solid #CCCCCC; }
-
-.product-details__title {
-  font-family: "Cabin", sans-serif; }
-
-.product-details__artist {
-  margin-top: .6em; }
-  .product-details__artist-icon {
-    font-size: 1rem;
-    margin-right: .5em; }
-    .product-details__artist-icon img {
-      width: 2.1em;
-      height: auto; }
-  .product-details__artist-name {
-    font-size: .95rem; }
-    .product-details__artist-name a {
-      font-weight: bold; }
-
-.product-details__price {
-  font-family: "Oswald", sans-serif;
-  font-size: 2.3rem;
-  color: #444444; }
-
-.product-details__add-to-cart {
-  text-transform: uppercase;
-  background: #58DBD7;
-  color: white;
-  font-family: "Oswald", sans-serif;
-  font-size: 1.2rem;
-  padding: .5em 1em;
-  border-radius: 2px; }
-  .product-details__add-to-cart:hover {
-    background: #CACCCB; }
-
-.product-details__drop-option {
-  margin: 2em 0; }
-  .product-details__drop-option label {
-    width: 100%;
-    display: block;
-    font-family: "Montserrat", sans-serif;
-    font-size: .85rem;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #000; }
-  .product-details__drop-option select {
-    min-width: 5em;
-    margin-top: .5em;
-    display: block;
-    width: 100%;
-    padding: .4em;
-    margin-top: .4em;
-    border: 1px solid #CCCCCC;
-    border-radius: 0px;
-    font-size: 1.25rem;
-    font-family: "Oswald", sans-serif;
-    color: #666666;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    background-color: white; }
-
 .product-details__image-size-slider {
   position: relative;
   width: 100%;
@@ -409,7 +283,6 @@ strong {
     display: none; }
   .product-details__bg-color.toggle-color .big-color-picker-container {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
   .product-details__bg-color.toggle-color .show-basic-text {
@@ -441,15 +314,6 @@ strong {
   font-weight: 300;
   text-transform: uppercase;
   color: #000; }
-
-.product-details__desc {
-  font-size: .85rem;
-  margin-top: .5em; }
-  .product-details__desc-container {
-    margin-top: 3em; }
-
-.product-details__ship {
-  margin-top: 2em; }
 
 .small-color-picker {
   margin: 1em auto 0;
@@ -499,11 +363,11 @@ strong {
 
 .product-details__preview {
   position: relative;
-  width: 100%; }
-  .product-details__preview img {
+  margin: 0 auto; }
+  .product-details__preview > img {
     display: block;
     width: 100%;
-    height: auto; }
+    height: 100%; }
 
 .product-details__change-preview {
   background: #848659;
@@ -515,7 +379,8 @@ strong {
   width: 100%;
   z-index: 1000;
   opacity: 0;
-  cursor: move; }
+  cursor: move;
+  overflow: hidden; }
   .product-details__change-preview.mobile {
     border-radius: 50px; }
     .product-details__change-preview.mobile .outer-border, .product-details__change-preview.mobile .inner-border {
@@ -524,9 +389,6 @@ strong {
     position: absolute;
     left: 0%;
     top: 0%;
-    width: 100%;
-    height: auto;
-    display: block;
     height: auto;
     border: 1px dashed #CCCCCC;
     z-index: 1000; }
